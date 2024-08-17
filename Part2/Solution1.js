@@ -17,6 +17,10 @@ function download(url, callback) {
     }, 3000);
 }
 
+download("https://www.example.com", function handleDownload(data) {
+    console.log("Data downloaded is", data);
+})
+
 function writeFile(data, fileName, callback) {
     // fileName tells the name of the file to be created in which data will be written
     console.log("Writing", data, " to file");
